@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="#dceafb">
+
+    <Spinner
+        android:id="@+id/spinnerLanguage"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/imagecollaspe1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/collaspe" />
+
+        <CheckedTextView
+        android:id="@+id/checkedTextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="source code" 
+        android:textColor="#2c2b2b"/>
+         </LinearLayout>
+
+    <EditText
+        android:id="@+id/edittextSource"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.36"
+        android:ems="10"
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        android:singleLine="false" >
+
+        <requestFocus />
+    </EditText>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:id="@+id/imagecollaspe2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/collaspe" />
+
+        <CheckedTextView
+        android:id="@+id/checkedTextView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="stdin" 
+        android:textColor="#2c2b2b"/>
+         </LinearLayout>
+
+    <EditText
+        android:id="@+id/edittextInput"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.26"
+        android:ems="10"
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        android:singleLine="false" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/btnExecute"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Execute" />
+
+    </LinearLayout>
+
+    <CheckedTextView
+        android:id="@+id/textResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <CheckedTextView
+        android:id="@+id/textOutput"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.48"
+        android:text="" />
+
+</LinearLayout>
